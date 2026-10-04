@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>九州文学総合作者索引</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f7f4ef;color:#3f3934;font-family:"Noto Sans JP","Yu Gothic",Meiryo,sans-serif;line-height:1.65}
+.wrap{max-width:1200px;margin:0 auto;padding:0 22px}
+header{background:#40352e;color:#f7f0e7}
+.header-inner{padding:30px 22px 22px}
+.kicker{font-size:12px;letter-spacing:.18em;color:#d9cdbd}
+h1{margin:2px 0 0;font-family:Georgia,"Yu Mincho",serif;font-size:30px;font-weight:500}
+nav{background:#332b26;border-top:1px solid #5a4c42}
+.nav{display:flex;overflow:auto}
+.nav span{display:block;color:#d9cdbd;padding:10px 15px;font-size:14px;white-space:nowrap}
+.nav span.active{background:#5a4c42;color:#fff}
+main{padding:30px 0 60px}
+.back-home{display:inline-block;margin-bottom:14px;padding:7px 13px;border:1px solid #cfc4b9;border-radius:7px;background:#fffdf9;color:#5b4a3e;text-decoration:none;font-size:13px}.back-home:hover{background:#f0e7d8}
+.page-title{font-family:Georgia,"Yu Mincho",serif;font-weight:500;margin:0 0 18px;color:#4a4039}
+.intro{background:#fffdf9;border:1px solid #ddd3c5;border-radius:10px;padding:16px 18px;margin-bottom:16px}
+.controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+input{flex:1;min-width:240px;max-width:470px;padding:11px 13px;border:1px solid #cfc4b9;border-radius:7px;background:#fff;font-size:15px}
+select{padding:10px 12px;border:1px solid #cfc4b9;border-radius:7px;background:#fff;font-size:14px}
+.count{font-size:13px;color:#776e65}
+.layout{display:grid;grid-template-columns:310px 1fr;gap:18px}
+.panel{background:#fffdf9;border:1px solid #ddd3c5;border-radius:10px;overflow:hidden}
+.panel h2{font-family:Georgia,"Yu Mincho",serif;font-weight:500;font-size:19px;margin:0;padding:16px 18px;border-bottom:1px solid #eee7de}
+.author-list{padding:8px;max-height:70vh;overflow:auto}
+.author-btn{display:block;width:100%;text-align:left;border:0;border-bottom:1px solid #eee7de;background:transparent;padding:8px 10px;color:#403a35;font-size:14px;cursor:pointer}
+.author-btn:hover,.author-btn.active{background:#f0e7d8}
+.author-btn span{float:right;color:#8a8179;font-size:12px}
+.detail-head{padding:16px 20px;background:#f0e7d8;border-bottom:1px solid #ddd3c5}
+.detail-head strong{font-size:23px;font-weight:normal}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{padding:10px 12px;border-bottom:1px solid #eee7de;text-align:left;vertical-align:top}
+th{background:#faf7f2;color:#5b4a3e;font-weight:bold}
+tr:nth-child(even) td{background:#fcfaf7}
+.period{white-space:nowrap;font-weight:600}
+.category{white-space:nowrap;color:#8c5828;font-weight:bold}
+.pages{white-space:nowrap;color:#776e65}
+.detail-empty{padding:30px 20px;color:#776e65}
+.small{font-size:12px;color:#776e65}
+@media(max-width:800px){.layout{grid-template-columns:1fr}.author-list{max-height:300px}table{font-size:13px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap header-inner">
+    <div class="kicker">KYUSHU BUNGAKU</div>
+    <h1>九州文学総目録｜総合作者索引</h1>
+  </div>
+  <nav><div class="wrap"><div class="nav">
+    <span class="active">第一次～第五期・劉寒吉追悼号</span>
+  </div></div></nav>
+</header>
+<main class="wrap">
+  <a class="back-home" href="index.html">← トップページに戻る</a>
+  <h2 class="page-title">九州文学 総合作者索引</h2>
+  <div class="intro">
+    <strong>作者名をクリック</strong>すると、その作者の掲載作品を全期間から一覧表示します。<br>
+    表示項目：<strong>期・年月日・分類・タイトル・ページ数</strong>
+  </div>
+  <div class="controls">
+    <input id="search" type="search" placeholder="作者名を検索…">
+    <select id="period"><option value="すべて">全期間</option></select>
+    <div class="count" id="count"></div>
+  </div>
+  <div class="layout">
+    <section class="panel">
+      <h2>作者一覧</h2>
+      <div class="author-list" id="authors"></div>
+    </section>
+    <section class="panel" id="detail">
+      <div class="detail-empty">左の作者名をクリックしてください。</div>
+    </section>
+  </div>
+</main>
+<script src="author_data.js"></script>
+<script>
+const byAuthor=new Map();
+for(const r of DATA.records){
+  if(!byAuthor.has(r.author)) byAuthor.set(r.author,[]);
+  byAuthor.get(r.author).push(r);
+}
+const periods=["すべて","第一次","第二期","第三期","第四期","第五期","劉寒吉追悼号"];
+const authors=DATA.authors;
+const list=document.getElementById("authors");
+const detail=document.getElementById("detail");
+const search=document.getElementById("search");
+const period=document.getElementById("period");
+const count=document.getElementById("count");
+
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function filteredAuthors(){
+  const q=search.value.trim().toLowerCase();
+  const p=period.value;
+  return authors.filter(a=>{
+    if(q && !a.toLowerCase().includes(q)) return false;
+    if(p==="すべて") return true;
+    return (byAuthor.get(a)||[]).some(r=>r.period===p);
+  });
+}
+function renderList(){
+  const names=filteredAuthors();
+  list.innerHTML=names.map(a=>{
+    const n=(byAuthor.get(a)||[]).filter(r=>period.value==="すべて"||r.period===period.value).length;
+    return `<button class="author-btn" data-author="${esc(a)}">${esc(a)}<span>（${n}件）</span></button>`;
+  }).join("");
+  count.textContent=`作者 ${names.length}名 ／ 全掲載項目 ${DATA.records.length}件`;
+  list.querySelectorAll(".author-btn").forEach(b=>b.onclick=()=>showAuthor(b.dataset.author,b));
+}
+function showAuthor(author,btn){
+  list.querySelectorAll(".author-btn").forEach(b=>b.classList.remove("active"));
+  if(btn) btn.classList.add("active");
+  const rows=(byAuthor.get(author)||[]).filter(r=>period.value==="すべて"||r.period===period.value);
+  rows.sort((a,b)=>a.period.localeCompare(b.period,'ja') || a.date.localeCompare(b.date,'ja'));
+  detail.innerHTML=`
+    <div class="detail-head"><strong>${esc(author)}</strong><div class="small">${rows.length}件</div></div>
+    <div style="overflow:auto"><table>
+    <thead><tr><th>期・号</th><th>年月日・号</th><th>分類</th><th>タイトル</th><th>ページ数</th></tr></thead>
+    <tbody>${rows.map(r=>`<tr>
+      <td class="period">${esc(r.period)}</td>
+      <td>${esc(r.date)}</td>
+      <td class="category">${esc(r.category)}</td>
+      <td>${esc(r.title)}</td>
+      <td class="pages">${esc(r.pages)}</td>
+    </tr>`).join("")}</tbody></table></div>`;
+}
+search.addEventListener("input",renderList);
+period.addEventListener("change",()=>{renderList(); detail.innerHTML='<div class="detail-empty">左の作者名をクリックしてください。</div>';});
+periods.slice(1).forEach(p=>{const o=document.createElement("option");o.value=p;o.textContent=p;period.appendChild(o)});
+renderList();
+</script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="九州文学総目録">
+<meta name="keywords" content="九州文学,総目録">
+<title>九州文学総目録</title>
+<style>
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: #f4f0e7;
+  color: #352f2a;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", "MS PMincho", serif;
+  line-height: 1.9;
+  font-size: 16px;
+}
+a { color: #5b4030; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.wrap { max-width: 1080px; margin: auto; padding: 0 22px; }
+
+header {
+  background: #40352e;
+  color: #fff;
+  border-bottom: 4px solid #b58d57;
+}
+.header-inner { padding: 42px 22px 36px; }
+.kicker { font-size: 13px; letter-spacing: .25em; color: #d9cbb8; margin-bottom: 8px; }
+h1 { margin: 0; font-size: 38px; font-weight: normal; letter-spacing: .12em; }
+
+.intro {
+  margin: 32px 0;
+  background: #fffdf8;
+  border: 1px solid #ded4c5;
+  border-left: 5px solid #b58d57;
+  padding: 27px 31px;
+  box-shadow: 0 3px 12px rgba(60,45,30,.06);
+  font-size: 1.05rem;
+}
+.intro p { margin: 0; }
+
+.section { margin-top: 40px; }
+.section-title {
+  margin-bottom: 18px;
+}
+.section-title h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: normal;
+  letter-spacing: .08em;
+  color: #4b382d;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.card {
+  background: #fff;
+  border: 1px solid #ddd3c5;
+  box-shadow: 0 2px 9px rgba(60,45,30,.05);
+}
+.card-head {
+  background: #ead9bb;
+  padding: 14px 18px;
+}
+.card-head a, .card-head b {
+  font-size: 20px;
+  font-weight: bold;
+}
+.card-head .period {
+  color: #a45e20;
+  font-size: 14px;
+  margin-left: 8px;
+  font-weight: normal;
+}
+.card-body {
+  padding: 20px 22px 22px;
+  font-size: 15.5px;
+}
+.card-body p { margin: 0; }
+
+.links { margin-top: 15px; }
+.link-pill {
+  display: inline-block;
+  padding: 5px 14px;
+  border: 1px solid #cdbca4;
+  border-radius: 20px;
+  margin-right: 7px;
+  font-size: 14px;
+  background: #faf8f5;
+}
+.link-pill:hover {
+  background: #ead9bb;
+}
+
+/* 劉寒吉追悼号専用のヘッダー背景色 */
+.card-head.special {
+  background: #e4e8e1;
+}
+
+footer {
+  margin-top: 55px;
+  background: #40352e;
+  color: #d9cdbd;
+  padding: 25px 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media(max-width:700px) {
+  .wrap { padding: 0 15px; }
+  .header-inner { padding: 30px 15px; }
+  h1 { font-size: 28px; }
+  .intro { padding: 22px 19px; margin: 20px 0; font-size: 1rem; }
+  .grid { grid-template-columns: 1fr; }
+  .card-body { font-size: 15px; }
+}
+
+.author-index-card {
+  margin-top: 28px;
+  background: #fffdf8;
+  border: 1px solid #cdbca4;
+  border-left: 5px solid #a45e20;
+  box-shadow: 0 2px 9px rgba(60,45,30,.05);
+}
+.author-index-card a {
+  display: block;
+  padding: 16px 20px 12px;
+  font-size: 21px;
+  font-weight: bold;
+  color: #5b4030;
+}
+.author-index-card p {
+  margin: 0;
+  padding: 0 20px 17px;
+  font-size: 16px;
+}
+.author-index-card a:hover {
+  background: #faf4ea;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-inner">
+    <div class="kicker">KYUSHU BUNGAKU</div>
+    <h1>九州文学総目録</h1>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="intro">
+    <p>このサイトでは、雑誌「九州文学」の目録を公開しています。雑誌は、福岡県立図書館や北九州市立図書館図書館などに所蔵されていると思います。</p>
+  </section>
+
+  <section class="author-index-card" aria-label="作者索引">
+    <a href="author.html">作者から探す　―　九州文学 総合作者索引</a>
+    <p>第一次～第五期・劉寒吉追悼号に掲載された作品を、作者名から探すことができます。作者名は50音順ではありませんので、ご了承ください。作者名が記載されていない掲載項目は、索引の対象としていません。<br>※掲載データが多いため、索引の表示に少し時間がかかる場合があります。表示されるまで、しばらくお待ちください。</p>
+  </section>
+
+  <section class="section">
+    <div class="section-title"><h2>九州文学目録</h2></div>
+
+    <div class="grid">
+
+      <!-- 第一次九州文学 -->
+      <article class="card">
+        <div class="card-head">
+          <a href="dai1.html">第一次九州文学</a>
+        </div>
+        <div class="card-body">
+          <p>第二期九州文学は、「九州芸術」「文学会議」「とらんしっと」「九州文学」の四雑誌を総合したものです。それ以前の、単独の「九州文学」をここで、第一次九州文学として、目録を公開しています。全8冊です。</p>
+        </div>
+      </article>
+
+      <!-- 第二期九州文学 -->
+      <article class="card">
+        <div class="card-head">
+          <a href="dai2.html">第二期九州文学</a>
+          <span class="period">(第1冊～第116冊)</span>
+        </div>
+        <div class="card-body">
+          <p>「九州芸術」「文学会議」「とらんしっと」「九州文学」の四雑誌を総合したものです。主に復刻版の第二期九州文学を見て作成。78冊が、欠号となっていますが、原田種夫（著）『記録九州文学』によれば、空襲で印刷所が焼けて、刊行されなかったようです。89冊も刊行されなかったようです。復刻版は、1冊から109冊までの収録となっていますが、第二期は、1冊から116冊まであります。</p>
+        </div>
+      </article>
+
+      <!-- 第三期九州文学 -->
+      <article class="card">
+        <div class="card-head">
+          <a href="dai3.html">第三期九州文学</a>
+        </div>
+        <div class="card-body">
+          <p>第三期は、他の九州文学と性質が少し異なるようで、全9冊あります。九州文学の通巻番号は、第二期の第1冊目が、通巻の第1冊目で、第二期が1冊から116冊まで、第四期が117冊からとなっており、通巻では第二期と第四期がつながっています。なかなか揃ろわなかったのですが、最終的に甫守哲治さん所蔵のものを見せていただいてようやく完成しました。この場を借りてお礼申し上げます。4、5、6、7、9冊は図書館になかったと思います。</p>
+        </div>
+      </article>
+
+      <!-- 第四期九州文学 -->
+      <article class="card">
+        <div class="card-head">
+          <a href="dai4.html">第四期九州文学</a>
+          <span class="period">(第117冊～第133冊）</span>
+        </div>
+        <div class="card-body">
+          <p>福岡県立図書館、北九州市立図書館に所蔵されている第四期九州文学を使用して目録を作成しました。県立図書館所蔵のものは、若干の切り取り部分があるのが問題。巻数は、どちらの図書館も揃っています。</p>
+        </div>
+      </article>
+
+      <!-- 第五期九州文学 -->
+      <article class="card">
+        <div class="card-head">
+          <b>第五期九州文学</b>
+          <span class="period">(第134冊～第464冊)</span>
+        </div>
+        <div class="card-body">
+          <p>通巻第134冊から第464冊まで。 福岡県立図書館において主に作業。県立図書館に所蔵されていないものに関しては、北九州市立図書館所蔵のものを利用。</p>
+          <div class="links">
+            <a class="link-pill" href="dai501.html">134冊～300冊まで</a>
+            <a class="link-pill" href="dai502.html">301冊～464冊まで</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 劉寒吉追悼号 -->
+      <article class="card">
+        <div class="card-head special">
+          <a href="ryu.html">劉寒吉追悼号</a>
+          <span class="period">(昭和62年4月20日発行)</span>
+        </div>
+        <div class="card-body">
+          <p>第五期の最後が、昭和58年12月1日発行のものなのでから、その後に出されたものということになります。復刊九州文学は平成6年からなので、こちらに入るわけでもなく、１冊だけ独立したものとなっています。青い表紙には、書斎で煙草をふかしながら本を読む劉寒吉の写真が載っており、大きく赤い文字で「九州文学」と書かれています。北九州市立図書館所蔵。</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    九州文学総目録
+  </div>
+</footer>
+
+</body>
+</html>

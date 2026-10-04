@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="第一次 九州文学 目録 - 九州文学総目録">
+<meta name="keywords" content="九州文学,総目録,第一次">
+<title>第一次 九州文学 - 九州文学総目録</title>
+<style>
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: #f4f0e7;
+  color: #352f2a;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", "MS PMincho", serif;
+  line-height: 1.9;
+  font-size: 16px;
+}
+a { color: #5b4030; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.wrap { max-width: 1080px; margin: auto; padding: 0 22px; }
+
+/* ヘッダー */
+header {
+  background: #40352e;
+  color: #fff;
+  border-bottom: 4px solid #b58d57;
+}
+.header-inner { padding: 35px 22px 25px; }
+.kicker { font-size: 13px; letter-spacing: .25em; color: #d9cbb8; margin-bottom: 8px; }
+h1 { margin: 0; font-size: 36px; font-weight: normal; letter-spacing: .12em; }
+h1 a { color: #fff; text-decoration: none; }
+
+/* ナビゲーションメニュー */
+nav {
+  background: #2e2621;
+  border-bottom: 1px solid #5b4a3e;
+}
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav-list li { margin: 0; }
+.nav-list a {
+  display: block;
+  padding: 12px 18px;
+  color: #d9cbb8;
+  font-size: 15px;
+  transition: background 0.2s;
+}
+.nav-list a:hover, .nav-list a.active {
+  background: #b58d57;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* メインコンテンツ */
+.page-title {
+  margin: 35px 0 20px;
+  font-size: 26px;
+  font-weight: normal;
+  color: #4b382d;
+  letter-spacing: .08em;
+  border-bottom: 2px solid #b58d57;
+  padding-bottom: 8px;
+}
+
+/* 目録テーブルブロック */
+.issue-block {
+  background: #fff;
+  border: 1px solid #ddd3c5;
+  box-shadow: 0 2px 9px rgba(60,45,30,.05);
+  margin-bottom: 35px;
+  overflow: hidden;
+}
+
+.issue-header {
+  background: #ead9bb;
+  padding: 12px 18px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #4b382d;
+  border-bottom: 1px solid #ddd3c5;
+}
+
+.catalog-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.catalog-table th, .catalog-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid #eee7de;
+  text-align: left;
+  vertical-align: top;
+}
+
+.catalog-table tr:nth-child(even) {
+  background-color: #faf7f2;
+}
+
+.col-genre { width: 15%; color: #8c5828; font-weight: bold; white-space: nowrap; }
+.col-title { width: 45%; }
+.col-author { width: 25%; }
+.col-page { width: 15%; text-align: right; color: #776e65; white-space: nowrap; }
+
+.issue-footer {
+  background: #f0e7d8;
+  padding: 10px 18px;
+  font-size: 13.5px;
+  color: #5b4a3e;
+  border-top: 1px solid #ddd3c5;
+}
+
+.sub-header-row {
+  background: #e4e8e1 !important;
+  font-weight: bold;
+  color: #3b5238;
+}
+
+/* フッター */
+footer {
+  margin-top: 55px;
+  background: #40352e;
+  color: #d9cdbd;
+  padding: 25px 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media(max-width:700px) {
+  .wrap { padding: 0 12px; }
+  .header-inner { padding: 25px 12px; }
+  h1 { font-size: 26px; }
+  .nav-list a { padding: 10px 12px; font-size: 14px; }
+  .catalog-table th, .catalog-table td { padding: 8px 10px; font-size: 14px; }
+  .col-genre { width: 22%; }
+  .col-title { width: 43%; }
+  .col-author { width: 23%; }
+  .col-page { width: 12%; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-inner">
+    <div class="kicker">KYUSHU BUNGAKU</div>
+    <h1><a href="index.html">九州文学総目録</a></h1>
+  </div>
+  <nav>
+    <div class="wrap">
+      <ul class="nav-list">
+        <li><a href="index.html">トップ</a></li>
+        <li><a href="dai1.html" class="active">第１次</a></li>
+        <li><a href="dai2.html">第２期</a></li>
+        <li><a href="dai3.html">第３期</a></li>
+        <li><a href="dai4.html">第４期</a></li>
+        <li><a href="dai501.html">第５期 前半</a></li>
+        <li><a href="dai502.html">第５期 後半</a></li>
+        <li><a href="ryu.html">劉寒吉 追悼号</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <h2 class="page-title">第一次 九州文学</h2>
+
+  <!-- 昭和12年8月1日 -->
+  <div class="issue-block">
+    <div class="issue-header">昭和12年8月1日 第1巻第1号8月号</div>
+    <table class="catalog-table">
+      <tbody>
+        <tr><td class="col-genre">小説</td><td class="col-title">白粉</td><td class="col-author">吉井一男</td><td class="col-page">4～12</td></tr>
+        <tr><td class="col-genre">小説</td><td class="col-title">街の寄食者(第一回)</td><td class="col-author">篠山二郎</td><td class="col-page">13～22</td></tr>
+        <tr><td class="col-genre">寸評</td><td class="col-title">職工と酌婦の小説</td><td class="col-author">三木一雄</td><td class="col-page">22</td></tr>
+        <tr><td class="col-genre">随筆評論</td><td class="col-title">即心音信―文学に生きる問題―</td><td class="col-author">細田源吾</td><td class="col-page">23～25</td></tr>
+        <tr><td class="col-genre">評論</td><td class="col-title">南方人の集ひ</td><td class="col-author">沢西健</td><td class="col-page">26～28</td></tr>
+        <tr><td class="col-genre">寸評</td><td class="col-title">同人語</td><td class="col-author">二郎</td><td class="col-page">28</td></tr>
+        <tr><td class="col-genre">評論</td><td class="col-title">『良き芸術』と『偉大な芸術』<br>(現代ヒューマニズムへの一指針として)</td><td class="col-author">橋爪政成</td><td class="col-page">29～37</td></tr>
+        <tr><td class="col-genre">寸評</td><td class="col-title">同人語</td><td class="col-author">秋山</td><td class="col-page">37</td></tr>
+        <tr><td class="col-genre">評論</td><td class="col-title">ジイドのソヴィエット旅行記に関連して</td><td class="col-author">板橋謙吉</td><td class="col-page">38～39</td></tr>
+        <tr><td class="col-genre">詩</td><td class="col-title">死の行進曲</td><td class="col-author">浦瀬白雨</td><td class="col-page">40～45</td></tr>
+        <tr><td class="col-genre">詩</td><td class="col-title">あどけなき神性</td><td class="col-author">森田緑雨</td><td class="col-page">46</td></tr>
+        <tr><td class="col-genre">詩</td><td class="col-title">ましろき夢のうた</td><td class="col-author">森田緑雨</td><td class="col-page">47</td></tr>
+        <tr><td class="col-genre">詩</td><td class="col-title">おもかげの詩(うた)</td><td class="col-author">板橋謙吉</td><td class="col-page">48</td></tr>
+        <tr><td class="col-genre">俳句</td><td class="col-title">麁原句会</td><td class="col-author">古綺、叱咜郎、行人、一三四、支子、玄丹、無留</td><td class="col-page">49</td></tr>
+        <tr><td class="col-genre">俳句</td><td class="col-title">十三貫の暑さ<br>支那漫吟二ツ／ナポリよりベスビオ火山を望む／アミアン戦跡にて／自嘲吟一ツ</td><td class="col-author">綱島寒潮園</td><td class="col-page">50</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">土鈴荘雑筆<br>筍</td><td class="col-author">能美千秋</td><td class="col-page">51～52</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">青葉の頃</td><td class="col-author">井川速夫</td><td class="col-page">53～55</td></tr>
+        <tr><td class="col-genre">寸評</td><td class="col-title">同人語</td><td class="col-author">橋爪</td><td class="col-page">55</td></tr>
+        <tr><td class="col-genre">小説</td><td class="col-title">地下室<br>片意地娘／紙のおかね</td><td class="col-author">秋山六郎兵衛</td><td class="col-page">56～59</td></tr>
+        <tr><td class="col-genre">編輯後記</td><td class="col-title"></td><td class="col-author">秋山</td><td class="col-page">60</td></tr>
+      </tbody>
+    </table>
+    <div class="issue-footer">題字・黒田静男／表紙絵・富沢有為男／編集兼発行者・森田與一郎</div>
+  </div>
+
+  <!-- 昭和12年10月10日 -->
+  <div class="issue-block">
+    <div class="issue-header">昭和12年10月10日 第1巻第2号10月号</div>
+    <table class="catalog-table">
+      <tbody>
+        <tr><td class="col-genre">小説</td><td class="col-title">蛾の如く</td><td class="col-author">峰絢二郎</td><td class="col-page">4～16</td></tr>
+        <tr><td class="col-genre">小説</td><td class="col-title">街の寄食者(第二回)</td><td class="col-author">篠山二郎</td><td class="col-page">17～29</td></tr>
+        <tr><td class="col-genre">評論</td><td class="col-title">詩と人生</td><td class="col-author">浦瀬白雨</td><td class="col-page">30～36</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">地方の同人雑誌</td><td class="col-author">福田清人</td><td class="col-page">37～38</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">海外新潮<br>フランス</td><td class="col-author">大塚</td><td class="col-page">39</td></tr>
+        <tr><td class="col-genre">詩</td><td class="col-title">仲秋</td><td class="col-author">浦瀬白雨</td><td class="col-page">40～41</td></tr>
+        <tr><td class="col-genre">詩</td><td class="col-title">宝満山にて</td><td class="col-author">板橋謙吉</td><td class="col-page">42～43</td></tr>
+        <tr><td class="col-genre">詩</td><td class="col-title">生命</td><td class="col-author">板橋謙吉</td><td class="col-page">43</td></tr>
+        <tr><td class="col-genre">俳句</td><td class="col-title">無題<br>フローランス洗礼堂／ベニス漫吟三ツ／サン・マルコ広場にて／自嘲吟</td><td class="col-author">綱島寒潮園</td><td class="col-page">44</td></tr>
+        <tr><td class="col-genre">俳句</td><td class="col-title">麁原句会</td><td class="col-author">叱咜郎、玄丹、行人、古綺、支子、無留、一三四</td><td class="col-page">45</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">昨日の海―Ｔにささぐ―</td><td class="col-author">大塚幸男</td><td class="col-page">46～50</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">風鈴―七月の手帖より―</td><td class="col-author">井手文雄</td><td class="col-page">51～53</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">末梢神経</td><td class="col-author">吉井一男</td><td class="col-page">54～57</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">病中雑記</td><td class="col-author">三木一雄</td><td class="col-page">58～59</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">随想断片</td><td class="col-author">後藤一民</td><td class="col-page">60～61</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">土鈴荘雑筆<br>石投げ／Ａ／Ｂ</td><td class="col-author">能美千秋</td><td class="col-page">62～64</td></tr>
+        <tr><td class="col-genre">寸評</td><td class="col-title">同人語</td><td class="col-author">橋爪政成、吉井一男、井手文雄、篠山二郎、浦瀬白雨</td><td class="col-page">65</td></tr>
+        <tr><td class="col-genre">小説</td><td class="col-title">地下室<br>勝負／大蛇</td><td class="col-author">秋山六郎兵衛</td><td class="col-page">66～71</td></tr>
+        <tr><td class="col-genre">編輯後記</td><td class="col-title"></td><td class="col-author">橋爪政成</td><td class="col-page">72</td></tr>
+      </tbody>
+    </table>
+    <div class="issue-footer">題字・黒田静男／表紙絵・富沢有為男／編集兼発行者・児玉敬治</div>
+  </div>
+
+  <!-- 昭和12年11月10日 -->
+  <div class="issue-block">
+    <div class="issue-header">昭和12年11月10日 第1巻第3号11月号</div>
+    <table class="catalog-table">
+      <tbody>
+        <tr><td class="col-genre">評論</td><td class="col-title">自我燃焼の文学について</td><td class="col-author">橋爪政成</td><td class="col-page">4～10</td></tr>
+        <tr><td class="col-genre">評論</td><td class="col-title">書斎放講</td><td class="col-author">後藤一民</td><td class="col-page">11～14</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">海外新潮<br>ロチの切手／ボードレールの胸像／ノーベル賞は誰に？／新しいアナトール・フランス伝／チエホフ伝／モーリス・ドネエの追憶記</td><td class="col-author">大塚</td><td class="col-page">15</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">海外新潮<br>独逸に於ける戦争小説に就いて</td><td class="col-author">秋山六郎兵衛</td><td class="col-page">16</td></tr>
+        <tr><td class="col-genre">詩</td><td class="col-title">残された歌</td><td class="col-author">浦瀬白雨</td><td class="col-page">17～18</td></tr>
+        <tr><td class="col-genre">詩</td><td class="col-title">寒い神嘗祭の日</td><td class="col-author">森田緑雨</td><td class="col-page">19～20</td></tr>
+        <tr><td class="col-genre">詩</td><td class="col-title">睡蓮</td><td class="col-author">森田緑雨</td><td class="col-page">20</td></tr>
+        <tr><td class="col-genre">俳句</td><td class="col-title">句屑<br>別府朝見／別府玖倍理湯井／フロレンス(ミケランヂエロの丘にて)／アデン港にて／ベニス漫吟</td><td class="col-author">綱島寒潮園</td><td class="col-page">21</td></tr>
+        <tr><td class="col-genre">俳句</td><td class="col-title">麁原句会</td><td class="col-author">叱咜郎、玄丹、行人、古綺、支子、一三四、無留</td><td class="col-page">22</td></tr>
+        <tr><td class="col-genre">小説</td><td class="col-title">母への手紙</td><td class="col-author">浦瀬白雨</td><td class="col-page">23～25</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">同人語</td><td class="col-author">浦瀬白雨、後藤一民、吉井一男、橋爪政成、森田緑雨、井手文雄</td><td class="col-page">26～27</td></tr>
+        <tr><td class="col-genre">小説</td><td class="col-title">高原</td><td class="col-author">井手文雄</td><td class="col-page">28～33</td></tr>
+        <tr><td class="col-genre">小説</td><td class="col-title">街の寄食者(第三回)</td><td class="col-author">篠山二郎</td><td class="col-page">34～45</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">十月号を測る</td><td class="col-author">森田緑雨</td><td class="col-page">45</td></tr>
+        <tr><td class="col-genre">小説</td><td class="col-title">地下室<br>｢ミヨウト｣／夕映</td><td class="col-author">秋山六郎兵衛</td><td class="col-page">46～51</td></tr>
+        <tr><td class="col-genre">編輯後記</td><td class="col-title"></td><td class="col-author">秋山</td><td class="col-page">52</td></tr>
+      </tbody>
+    </table>
+    <div class="issue-footer">題字・黒田静男／表紙絵・富沢有為男／編集兼発行者・児玉敬治</div>
+  </div>
+
+  <!-- 昭和13年1月1日 -->
+  <div class="issue-block">
+    <div class="issue-header">昭和13年1月1日 第2巻第1号1月号</div>
+    <table class="catalog-table">
+      <tbody>
+        <tr><td class="col-genre">小説</td><td class="col-title">市乾鹿文</td><td class="col-author">峰絢二郎</td><td class="col-page">2～10</td></tr>
+        <tr><td class="col-genre">小説</td><td class="col-title">昔の下女</td><td class="col-author">御木辰雄</td><td class="col-page">11～14</td></tr>
+        <tr><td class="col-genre">小説</td><td class="col-title">刃向ふ女</td><td class="col-author">吉井一男</td><td class="col-page">15～35</td></tr>
+        <tr><td class="col-genre">評論</td><td class="col-title">地方主義文学序説</td><td class="col-author">篠山二郎</td><td class="col-page">36～42</td></tr>
+        <tr><td class="col-genre">評論</td><td class="col-title">九州と東北と</td><td class="col-author">徳永直</td><td class="col-page">43～45</td></tr>
+        <tr><td class="col-genre">評論</td><td class="col-title">題材と技巧</td><td class="col-author">武野藤介</td><td class="col-page">46～48</td></tr>
+        <tr><td class="col-genre">評論</td><td class="col-title">文学に於ける地方性の意義と条件</td><td class="col-author">後藤一民</td><td class="col-page">49～51</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">海外新潮 フランス<br>〔ロベエル・ブラジャツクの新作〕〔ノオベル授賞者決定〕〔レオン・ドオデエのユウゴオ伝〕</td><td class="col-author">大塚</td><td class="col-page">52</td></tr>
+        <tr><td class="col-genre">詩</td><td class="col-title">秋餘情<br>しぐれ／あたゝか</td><td class="col-author">森田緑雨</td><td class="col-page">53～54</td></tr>
+        <tr><td class="col-genre">詩</td><td class="col-title">雲の詩</td><td class="col-author">森田緑雨</td><td class="col-page">55</td></tr>
+        <tr><td class="col-genre">詩</td><td class="col-title">冬日</td><td class="col-author">能美千秋</td><td class="col-page">56～57</td></tr>
+        <tr><td class="col-genre">詩</td><td class="col-title">雨に想ふ</td><td class="col-author">岡田華秋</td><td class="col-page">58～59</td></tr>
+        <tr><td class="col-genre">俳句</td><td class="col-title">句屑(四)<br>ナポリ(グロツタ・アツチウラ)／ナポリ(二)／ナポリ(三)／ベニス漫吟(サンマルコ広場)／福岡平尾</td><td class="col-author">綱島寒潮園</td><td class="col-page">60</td></tr>
+        <tr><td class="col-genre">俳句</td><td class="col-title">そはら句会</td><td class="col-author">古綺、玄丹、杜美王、叱咜郎、支子、無留、一三四、行人</td><td class="col-page">61</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">私の中に居る遠き私</td><td class="col-author">浦瀬白雨</td><td class="col-page">62～64</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">おんな友達</td><td class="col-author">松原一枝</td><td class="col-page">65～68</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">土鈴荘雑筆<br>A、櫨／B、年貢米／C、薪物とり／D、父を背負ふ</td><td class="col-author">能美千秋</td><td class="col-page">69～71</td></tr>
+        
+        <tr class="sub-header-row"><td colspan="4">▽久米の剣</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">映画｢風の中の子供｣雑感</td><td class="col-author">吉井一男</td><td class="col-page">72～73</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">石川達三『日陰の村』を読む</td><td class="col-author">橋爪政成</td><td class="col-page">73</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">｢自我の探究｣とドストエフスキー</td><td class="col-author">篠山二郎</td><td class="col-page">73～75</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">｢屋根裏の哲人｣</td><td class="col-author">後藤一民</td><td class="col-page">75</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">何故小説を書くか</td><td class="col-author">三木一雄</td><td class="col-page">75～76</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">うちわ話(十一月号寸評)</td><td class="col-author">橋爪</td><td class="col-page">76～77</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">お別れ</td><td class="col-author">井手文雄</td><td class="col-page">77</td></tr>
+        <tr class="sub-header-row"><td colspan="4">△</td></tr>
+
+        <tr><td class="col-genre">小説</td><td class="col-title">地下室 双曲線<br>Ａ、ねこ／Ｂ、みち</td><td class="col-author">秋山六郎兵衛</td><td class="col-page">78～84</td></tr>
+        <tr><td class="col-genre">編輯後記</td><td class="col-title"></td><td class="col-author"></td><td class="col-page">85</td></tr>
+      </tbody>
+    </table>
+    <div class="issue-footer">題字・黒田静男／表紙絵・富沢有為男／編集兼発行者・児玉敬治</div>
+  </div>
+
+  <!-- 昭和13年3月5日 -->
+  <div class="issue-block">
+    <div class="issue-header">昭和13年3月5日 第2巻第2号3月号</div>
+    <table class="catalog-table">
+      <tbody>
+        <tr><td class="col-genre">評論</td><td class="col-title">海外農村文学考(第一回)<br>一、フランス篇（上）<br>(1)バルザツクの『田園生活場景』／(2)サンドの『麻打ち夜話』</td><td class="col-author">篠山二郎</td><td class="col-page">2～9</td></tr>
+        <tr><td class="col-genre">評論</td><td class="col-title">巨人ニィチェ(第一回)<br>はしがき<br>一、彼の生涯 A 性差と素性／B 誕生／C 少年時代／D 教育</td><td class="col-author">後藤一民</td><td class="col-page">10～16</td></tr>
+        <tr><td class="col-genre">書評</td><td class="col-title">『九州文学』新年号創作評</td><td class="col-author">武野藤介</td><td class="col-page">16</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">海外新潮</td><td class="col-author">Y.O.</td><td class="col-page">17</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">私の中に居る遠い私(第二回)</td><td class="col-author">浦瀬白雨</td><td class="col-page">18～21</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">手酌禮讃</td><td class="col-author">宮地嘉六</td><td class="col-page">22～24→32</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">楽我記<br>感情と表情／最大の不幸／恋愛と性慾／肉親憎悪／トルストイ／ドストイエフスキー／優れたる男／戦場に於ける彼等二人／悲しき幸福</td><td class="col-author">吉井一男</td><td class="col-page">25～26</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">土鈴荘雑筆<br>A. 指きり／B. ちんがらさき／C. どちらがよかろうか。／D. ちよん／E. つぼ虫つり／F. いもがま</td><td class="col-author">能美千秋</td><td class="col-page">27～32</td></tr>
+        <tr><td class="col-genre">詩</td><td class="col-title">トレメンダス・トライフルズ</td><td class="col-author">浦瀬白雨</td><td class="col-page">33～35</td></tr>
+        <tr><td class="col-genre">詩</td><td class="col-title">オノレ・ド・バルザックに寄せて</td><td class="col-author">大塚幸男</td><td class="col-page">36～37</td></tr>
+        <tr><td class="col-genre">詩</td><td class="col-title">旅のこゝろ</td><td class="col-author">岡田華秋</td><td class="col-page">38～39</td></tr>
+        <tr><td class="col-genre">短歌</td><td class="col-title">港の倉庫街</td><td class="col-author">大塚幸男</td><td class="col-page">40</td></tr>
+        <tr><td class="col-genre">俳句</td><td class="col-title">寒梅集(五)<br>エジプト遊行吟／厦行(コロンス)／ニースよりモンテカロに遊ぶ／福岡大濠公園所見／大連遊草／エジプト遊行吟／旅順口(白玉塔)／ポンペイ遺跡見物／ミラーノ(聖フランシス)</td><td class="col-author">綱島寒潮園</td><td class="col-page">41～42</td></tr>
+        <tr><td class="col-genre">俳句</td><td class="col-title">そはら句会</td><td class="col-author">行人、支子、無留、叱咜郎、古綺、玄丹、一三四、奈良夫</td><td class="col-page">43</td></tr>
+        
+        <tr class="sub-header-row"><td colspan="4">▽頭椎剣</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title"></td><td class="col-author">橋爪</td><td class="col-page">44</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">増補</td><td class="col-author">篠山三郎</td><td class="col-page">44～45</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">妻への手紙</td><td class="col-author">吉井一男</td><td class="col-page">45</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">『学生生活短篇集』を読む</td><td class="col-author">橋爪政成</td><td class="col-page">45～47</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">『海のコオラス』を読む</td><td class="col-author">浦瀬白雨</td><td class="col-page">47</td></tr>
+        <tr class="sub-header-row"><td colspan="4">△</td></tr>
+
+        <tr><td class="col-genre">小説</td><td class="col-title">青い景色</td><td class="col-author">松原一枝</td><td class="col-page">48～58</td></tr>
+        <tr><td class="col-genre">小説</td><td class="col-title">市乾鹿文(二)</td><td class="col-author">峰絢二郎</td><td class="col-page">59～69</td></tr>
+        <tr><td class="col-genre">小説</td><td class="col-title">地下室<br>小犬／友だち</td><td class="col-author">秋山六郎兵衛</td><td class="col-page">70～76</td></tr>
+        <tr><td class="col-genre">編輯後記</td><td class="col-title"></td><td class="col-author">篠山</td><td class="col-page">77</td></tr>
+      </tbody>
+    </table>
+    <div class="issue-footer">題字・黒田静男／表紙絵・富沢有為男／編集兼発行者・児玉敬治</div>
+  </div>
+
+  <!-- 昭和13年4月5日 -->
+  <div class="issue-block">
+    <div class="issue-header">昭和13年4月5日 第2巻第3号4月号</div>
+    <table class="catalog-table">
+      <tbody>
+        <tr><td class="col-genre">小説</td><td class="col-title">市乾鹿文(完結)</td><td class="col-author">峰絢二郎</td><td class="col-page">2～12</td></tr>
+        <tr><td class="col-genre">小説</td><td class="col-title">芥沼</td><td class="col-author">吉井一男</td><td class="col-page">13～31</td></tr>
+        <tr><td class="col-genre">詩</td><td class="col-title">海</td><td class="col-author">恒屋喜壮</td><td class="col-page">32～33</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">私の中に居る遠い私</td><td class="col-author">浦瀬白雨</td><td class="col-page">34～37</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">贋金を使ふ(香港随筆)</td><td class="col-author">綱島寒園</td><td class="col-page">38～40</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">南京陥落―(小説のための覚え書)―</td><td class="col-author">松原一枝</td><td class="col-page">41～43</td></tr>
+        <tr><td class="col-genre">詩</td><td class="col-title">物語</td><td class="col-author">岡田華秋</td><td class="col-page">44</td></tr>
+        <tr><td class="col-genre">詩</td><td class="col-title">跫音</td><td class="col-author">岡田華秋</td><td class="col-page">45</td></tr>
+        <tr><td class="col-genre">評論</td><td class="col-title">海外農村文学考(第二回)<br>一、フランス篇（下）<br>(3)ゾラの『大地』／(4)ドーデの『風車小屋便り』／(5)モーパツサンの『田舎娘の話』其の他／(6)ルナールの『葡萄畑の葡萄作り』／(7)パザシの『死に行く土』／(8)ギヨーマンの『或る百姓の生涯』／(9)ジイドの『田園交響楽』／(10)シャンソンの『四つの要素』／(11)ジオノの『パン』／(12)『田舎』と『春なき谷間』</td><td class="col-author">篠山二郎</td><td class="col-page">46～54</td></tr>
+        <tr><td class="col-genre">評論</td><td class="col-title">巨人ニィチェ<br>E 兵役／F その他の研究／G ベール大学教授時代／H 残役／I 処女出版</td><td class="col-author">後藤一民</td><td class="col-page">55～60</td></tr>
+        <tr><td class="col-genre">詩</td><td class="col-title">空虚な部屋</td><td class="col-author">越智弾政</td><td class="col-page">61</td></tr>
+        <tr><td class="col-genre">詩</td><td class="col-title">世界地図</td><td class="col-author">越智弾政</td><td class="col-page">61</td></tr>
+        <tr><td class="col-genre">短歌</td><td class="col-title">微風</td><td class="col-author">南條タカ子</td><td class="col-page">62</td></tr>
+        <tr><td class="col-genre">俳句</td><td class="col-title">そはら句会</td><td class="col-author">行人、無留、奈良夫、玄丹、古綺、支子、叱<img src="ta.png" width="17" height="17" border="0" align="bottom">郎</td><td class="col-page">63</td></tr>
+        
+        <tr class="sub-header-row"><td colspan="4">▽頭椎剣</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">最近読んだもの</td><td class="col-author">秋山六郎兵衛</td><td class="col-page">64</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">『あらがね』評</td><td class="col-author">篠山二郎</td><td class="col-page">64～65</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">二つの型</td><td class="col-author">吉井一男</td><td class="col-page">65～66</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">｢市乾鹿文｣その他</td><td class="col-author">川崎竹一</td><td class="col-page">66</td></tr>
+        <tr class="sub-header-row"><td colspan="4">△</td></tr>
+
+        <tr><td class="col-genre">短歌</td><td class="col-title">宮地嶽行</td><td class="col-author">篠山二郎</td><td class="col-page">66</td></tr>
+        <tr><td class="col-genre">小説</td><td class="col-title">地下室<br>山姥</td><td class="col-author">秋山六郎兵衛</td><td class="col-page">67～71</td></tr>
+        <tr><td class="col-genre">編輯後記</td><td class="col-title"></td><td class="col-author">篠山</td><td class="col-page">72</td></tr>
+      </tbody>
+    </table>
+    <div class="issue-footer">題字・黒田静男／表紙絵・富沢有為男／編集兼発行者・児玉敬治</div>
+  </div>
+
+  <!-- 昭和13年5月5日 -->
+  <div class="issue-block">
+    <div class="issue-header">昭和13年5月5日 第2巻第4号5月号</div>
+    <table class="catalog-table">
+      <tbody>
+        <tr><td class="col-genre">評論</td><td class="col-title">作家の生活と文学の将来</td><td class="col-author">橋爪政成</td><td class="col-page">2～5</td></tr>
+        <tr><td class="col-genre">評論</td><td class="col-title">巨人ニィチェ<br>K 『季節外れの思想』／L ワグネルとの不和／M 人間的な、余りに人間的な</td><td class="col-author">後藤一民</td><td class="col-page">6～10</td></tr>
+        <tr><td class="col-genre">詩</td><td class="col-title">年輪</td><td class="col-author">越智弾政</td><td class="col-page">11～12</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">私の中に居る遠い私<br>薬鑵釣り</td><td class="col-author">浦瀬白雨</td><td class="col-page">13～16</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">名前のこと</td><td class="col-author">中島四五六</td><td class="col-page">17～18</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">緑の毛氈(香港随筆)</td><td class="col-author">綱島寒園</td><td class="col-page">19～22</td></tr>
+        <tr><td class="col-genre">詩</td><td class="col-title">午後二時</td><td class="col-author">岡田華秋</td><td class="col-page">23～24</td></tr>
+        <tr><td class="col-genre">評論</td><td class="col-title">地方主義文学雑感</td><td class="col-author">杉本杢一</td><td class="col-page">25～26</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">土鈴荘雑筆<br>A 井戸替／B ねづみ浄瑠璃／C 荒神まつり／D 亥の子／E 紐解きと兵児かき／F さなぶりと尻叩き</td><td class="col-author">能美千秋</td><td class="col-page">27～31</td></tr>
+        <tr><td class="col-genre">詩</td><td class="col-title">川と葦のうた</td><td class="col-author">恒屋喜壮</td><td class="col-page">32～33</td></tr>
+        <tr><td class="col-genre">俳句</td><td class="col-title">そはら句会</td><td class="col-author">無留、幸男、叱咜郎、奈良男、古綺、玄丹、行人、支子、一三四</td><td class="col-page">34</td></tr>
+        
+        <tr class="sub-header-row"><td colspan="4">▽頭椎剣</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">手帖</td><td class="col-author">恒屋喜壮</td><td class="col-page">35</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">地方主義文学と『南部鉄瓶工』</td><td class="col-author">篠山二郎</td><td class="col-page">35～37</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">文学と建設―｢生活の探究｣と｢南部鉄瓶工｣―</td><td class="col-author">橋爪政成</td><td class="col-page">37</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">私信より</td><td class="col-author">中本たか子</td><td class="col-page">37</td></tr>
+        <tr class="sub-header-row"><td colspan="4">△</td></tr>
+
+        <tr><td class="col-genre">小説</td><td class="col-title">未成年(第一部)</td><td class="col-author">篠山二郎</td><td class="col-page">38～50</td></tr>
+        <tr><td class="col-genre">小説</td><td class="col-title">李先生と女学生</td><td class="col-author">松原一枝</td><td class="col-page">51～55</td></tr>
+        <tr><td class="col-genre">小説</td><td class="col-title">地下室<br>若葉</td><td class="col-author">秋山六郎兵衛</td><td class="col-page">56～62</td></tr>
+        <tr><td class="col-genre">編輯後記</td><td class="col-title"></td><td class="col-author"></td><td class="col-page">62</td></tr>
+      </tbody>
+    </table>
+    <div class="issue-footer">題字・黒田静男／表紙絵・富沢有為男／編集兼発行者・児玉敬治</div>
+  </div>
+
+  <!-- 昭和13年7月1日 -->
+  <div class="issue-block">
+    <div class="issue-header">昭和13年7月1日 第2巻第5号一周年記念</div>
+    <table class="catalog-table">
+      <tbody>
+        <tr><td class="col-genre">小説</td><td class="col-title">陋巷</td><td class="col-author">古賀由紀</td><td class="col-page">2～16</td></tr>
+        <tr><td class="col-genre">小説</td><td class="col-title">未成年(第一部)</td><td class="col-author">篠山二郎</td><td class="col-page">17～42</td></tr>
+        <tr><td class="col-genre">戯曲</td><td class="col-title">巨船(一幕)</td><td class="col-author">峰絢二郎</td><td class="col-page">43～58</td></tr>
+        <tr><td class="col-genre">詩</td><td class="col-title">夜を慟いて</td><td class="col-author">恒屋喜壮</td><td class="col-page">59～60</td></tr>
+        <tr><td class="col-genre">評論</td><td class="col-title">方言と農民文学</td><td class="col-author">三島明</td><td class="col-page">61～65</td></tr>
+        <tr><td class="col-genre">評論</td><td class="col-title">巨人ニィチェ<br>N 「日堯」（太陽の曉） 「喜ばしき知恵」</td><td class="col-author">後藤一民</td><td class="col-page">66～69</td></tr>
+        <tr><td class="col-genre">詩</td><td class="col-title">歴史</td><td class="col-author">岡田華秋</td><td class="col-page">70～71</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">秋の顔</td><td class="col-author">浦瀬白雨</td><td class="col-page">72～77</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">土鈴荘雑筆<br>寶樹秘事伝に就て</td><td class="col-author">能美千秋</td><td class="col-page">77～82</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">酒と煙草</td><td class="col-author">吉井一男</td><td class="col-page">82～86</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">人生の断面図</td><td class="col-author">南條たか子</td><td class="col-page">86～88</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">久郎原雑記―映画『高橋是清自伝』を観る―</td><td class="col-author">寒園小史</td><td class="col-page">88～89</td></tr>
+        
+        <tr class="sub-header-row"><td colspan="4">▽頭椎剣</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">無主義主義</td><td class="col-author">吉井一男</td><td class="col-page">90</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">偶感</td><td class="col-author">後藤一民</td><td class="col-page">91</td></tr>
+        <tr><td class="col-genre">随筆</td><td class="col-title">手帖</td><td class="col-author">恒屋喜壮</td><td class="col-page">91</td></tr>
+        <tr class="sub-header-row"><td colspan="4">△</td></tr>
+
+        <tr><td class="col-genre">小説</td><td class="col-title">地下室<br>淵</td><td class="col-author">秋山六郎兵衛</td><td class="col-page">92～99</td></tr>
+        <tr><td class="col-genre">編輯後記</td><td class="col-title"></td><td class="col-author">橋爪</td><td class="col-page">100</td></tr>
+      </tbody>
+    </table>
+    <div class="issue-footer">題字・黒田静男／表紙絵・富沢有為男／編集兼発行者・児玉敬治</div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    九州文学総目録
+  </div>
+</footer>
+
+</body>
+</html>
