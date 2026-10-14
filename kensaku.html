@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>九州文学総目録 キーワード検索</title>
+<link rel="stylesheet" href="catalog-search.css">
+</head>
+<body>
+<main class="page">
+  <header class="site-header">
+    <p class="eyebrow">九州文学総目録</p>
+    <h1>キーワード検索</h1>
+    <p class="intro">タイトル・著者名・分類・発行情報から、7ファイルをまとめて検索できます。</p>
+  </header>
+
+  <form id="search-form" class="search-form">
+    <label for="keyword">検索キーワード</label>
+    <div class="search-line">
+      <input id="keyword" name="keyword" type="search" placeholder="例：博多" autocomplete="off">
+      <button type="submit">検索</button>
+    </div>
+    <p class="help">複数の語を入力すると、すべての語を含む項目を検索します（例：劉寒吉 小説）。</p>
+  </form>
+
+  <div id="status" class="status" role="status" aria-live="polite">検索語を入力して「検索」を押してください。</div>
+  <div id="results"></div>
+  <footer>九州文学総目録 キーワード検索</footer>
+</main>
+<script src="catalog-search.js"></script>
+</body>
+</html>

@@ -72,6 +72,10 @@ h1 { margin: 0; font-size: 38px; font-weight: normal; letter-spacing: .12em; }
   font-size: 20px;
   font-weight: bold;
 }
+/* 目録タイトルは、元の四角い見出しデザインのままにする */
+.card-head a {
+  color: #5b4030;
+}
 .card-head .period {
   color: #a45e20;
   font-size: 14px;
@@ -129,19 +133,28 @@ footer {
   box-shadow: 0 2px 9px rgba(60,45,30,.05);
 }
 .author-index-card a {
-  display: block;
-  padding: 16px 20px 12px;
+  display: inline-block;
+  margin: 14px 20px 8px;
+  padding: 5px 18px;
+  border: 1px solid #cdbca4;
+  border-radius: 24px;
+  background: #faf8f5;
   font-size: 21px;
   font-weight: bold;
   color: #5b4030;
+  transition: background-color .15s ease;
 }
 .author-index-card p {
   margin: 0;
   padding: 0 20px 17px;
   font-size: 16px;
 }
-.author-index-card a:hover {
-  background: #faf4ea;
+.author-index-card a:hover,
+.author-index-card a:focus-visible {
+  background: #ead9bb;
+  text-decoration: none;
+  outline: 2px solid #a45e20;
+  outline-offset: 2px;
 }
 
 </style>
@@ -158,12 +171,16 @@ footer {
 <main class="wrap">
 
   <section class="intro">
-    <p>このサイトでは、雑誌「九州文学」の目録を公開しています。雑誌は、福岡県立図書館や北九州市立図書館などに所蔵されていると思います。</br>
-このサイトは、<a href="http://kyushubungaku.web.fc2.com/"><span style="font-weight: 600;">FC2で公開している「九州文学総目録」</span></a>のコピーです。現在、FC2版と並行して公開しています。</p>
+    <p>このサイトでは、雑誌「九州文学」の目録を公開しています。雑誌は、福岡県立図書館や北九州市立図書館などに所蔵されていると思います。</p>
+  </section>
+
+  <section class="author-index-card" aria-label="キーワード検索">
+    <a href="kensaku.html">キーワードから探す</a>
+    <p>第一次～第五期・劉寒吉追悼号の目録を、タイトル・作者名・分類などのキーワードから検索できます。検索窓と検索結果は、キーワード検索ページにあります。</p>
   </section>
 
   <section class="author-index-card" aria-label="作者索引">
-    <a href="author.html">作者から探す　―　九州文学 総合作者索引</a>
+    <a href="author.html">作者から探す</a>
     <p>第一次～第五期・劉寒吉追悼号に掲載された作品を、作者名から探すことができます。作者名は50音順ではありませんので、ご了承ください。作者名が記載されていない掲載項目は、索引の対象としていません。<br>※掲載データが多いため、索引の表示に少し時間がかかる場合があります。表示されるまで、しばらくお待ちください。</p>
   </section>
 

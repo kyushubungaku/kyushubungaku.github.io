@@ -1,0 +1,31 @@
+*{box-sizing:border-box}
+:root{color-scheme:light;--ink:#4b382d;--muted:#78695d;--line:#d8c7ae;--head:#f4eadb;--accent:#8c5828}
+body{margin:0;background:#faf7f2;color:var(--ink);font-family:"Yu Mincho","Hiragino Mincho ProN","MS PMincho",serif;line-height:1.65}
+.page{max-width:1180px;margin:0 auto;padding:26px 18px 40px}
+.site-header{margin-bottom:24px}.eyebrow{margin:0;color:var(--accent);font-size:.9rem;font-weight:700;letter-spacing:.08em}
+h1{margin:2px 0 4px;font-size:clamp(1.65rem,4vw,2.2rem);line-height:1.3}
+.intro{margin:0;color:var(--muted)}
+.search-form{padding:18px;background:#fff;border:1px solid var(--line);border-radius:8px}
+.search-form label{display:block;font-weight:700;margin-bottom:8px}
+.search-line{display:flex;gap:8px}
+input[type=search]{min-width:0;flex:1;padding:12px 13px;border:1px solid #aaa;border-radius:5px;font:inherit;background:white}
+button{padding:11px 24px;border:0;border-radius:5px;background:var(--accent);color:white;font:inherit;font-weight:700;cursor:pointer}
+button:hover{filter:brightness(1.12)}button:focus-visible,input:focus-visible{outline:3px solid #94c7ef;outline-offset:2px}
+.help{margin:8px 0 0;color:var(--muted);font-size:.9rem}
+.status{margin:20px 0 12px;font-weight:700}
+.result-count{font-size:1.05rem}
+.result-group{margin:0 0 26px}
+.result-source{font-size:.9rem;color:var(--muted);margin:0 0 5px}
+.issue-header{padding:9px 12px;background:#ead9bb;border:1px solid #d8c7ae;border-bottom:0;font-weight:700;font-family:inherit}
+.table-wrap{overflow-x:auto;background:#fff}
+.catalog-table{width:100%;border-collapse:collapse;table-layout:fixed;background:#fff;font-size:.94rem}
+.catalog-table th,.catalog-table td{border:1px solid #d8c7ae;padding:7px 9px;vertical-align:top;text-align:left;overflow-wrap:anywhere}
+.catalog-table th{background:var(--head);font-weight:700;white-space:nowrap}
+.catalog-table .col-genre{width:105px;color:#8c5828;font-weight:700}
+.catalog-table .col-title{width:auto}
+.catalog-table .col-author{width:190px}
+.catalog-table .col-page{width:80px;text-align:center;white-space:nowrap}
+.catalog-table tbody tr:nth-child(even){background:#faf7f2}.catalog-table mark{background:#fff0a8;color:inherit;padding:0 1px}
+.empty{padding:18px;background:#fff;border:1px solid var(--line);border-radius:6px}
+footer{margin-top:36px;padding-top:12px;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted)}
+@media(max-width:650px){.page{padding:18px 10px 30px}.search-line{flex-direction:column}.search-line button{width:100%}.catalog-table{min-width:660px}.catalog-table .col-author{width:155px}}
